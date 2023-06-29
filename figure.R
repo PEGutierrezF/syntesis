@@ -50,9 +50,14 @@ p <- p + facet_wrap_custom(~var, scales = "free", ncol = 1,
   # Remove axis ticks
   theme(axis.text.x=element_blank()) + #subaxis x
   theme(legend.position = "none")  # Remove legend
+
 p
-p <- p  + geom_vline(xintercept = as.Date("2017-12-01"), linetype = "dashed", color = "#df65b0",linewidth = 1.5) +
-  geom_vline(xintercept = as.Date("2018-12-01"), linetype = "dashed", color = "#df65b0",linewidth = 1.5)
+
+
+p <- p  + geom_vline(xintercept = as.Date("2017-12-01"), 
+                     linetype = "dashed", color = "#df65b0",linewidth = 1.5) +
+  geom_vline(xintercept = as.Date("2018-12-01"), 
+             linetype = "dashed", color = "#df65b0",linewidth = 1.5)
 p
 
 library(cowplot)
