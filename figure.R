@@ -4,6 +4,7 @@
 library(ggplot2)
 library(tidyr)
 library(readxl)
+library(cowplot)
 
 data <- read_excel("data.xlsx")
 data <- read_excel("data.xlsx", sheet = 'data')
@@ -60,7 +61,7 @@ p <- p  + geom_vline(xintercept = as.Date("2017-12-01"),
              linetype = "dashed", color = "#df65b0",linewidth = 1.5)
 p
 
-library(cowplot)
+
 p <- ggdraw(p) + draw_label("Normal year", x = 0.15, y = 0.04)
 p
 p <- ggdraw(p) + draw_label("Post \n disturbance", x = 0.37, y = 0.03)
