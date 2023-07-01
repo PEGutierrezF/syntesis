@@ -17,11 +17,6 @@ rm(list = ls())
 
 
 
-library(ggplot2)
-library(tidyr)
-library(readxl)
-library(cowplot)
-
 data <- read_excel("data.xlsx")
 data <- read_excel("data.xlsx", sheet = 'data')
 head(data)

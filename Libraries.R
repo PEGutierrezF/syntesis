@@ -9,3 +9,9 @@
 # pabloe.gutierrezfonseca@gmail.com
 # ---------------------------------------------
 #  
+
+
+library(ggplot2)
+library(tidyr)
+library(readxl)
+library(cowplot)
